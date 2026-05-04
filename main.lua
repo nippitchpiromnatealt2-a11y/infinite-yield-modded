@@ -1,3 +1,4 @@
+--discord - https://discord.gg/XtvEmDwAjU
 print("Infinite Yield modded by Faith, had been ran!")
 if IY_LOADED and not _G.IY_DEBUG then
 	-- error("Infinite Yield is already running!", 0)
