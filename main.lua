@@ -4534,8 +4534,8 @@ CMDs[#CMDs + 1] = {NAME = 'reversemovement / rmove', DESC = 'Invert all your mov
 CMDs[#CMDs + 1] = {NAME = 'normalmovement / nmove', DESC = "Revert all your movements"}
 CMDs[#CMDs + 1] = {NAME = 'slipperyice / sice', DESC = 'You forgot how to iceskate'}
 CMDs[#CMDs + 1] = {NAME = 'unslipperyice / unsice', DESC = 'You remembered how to iceskate'}
-CMDs[#CMDs + 1] = {NAME = 'sink', DESC = "You are in the quicksand"}
-CMDs[#CMDs + 1] = {NAME = 'unsink', DESC = 'You come back to the solid ground'}
+CMDs[#CMDs + 1] = {NAME = 'sink', DESC = "You are in the quicksand (BETA)"}
+CMDs[#CMDs + 1] = {NAME = 'unsink', DESC = 'You come back to the solid ground (BETA)'}
 CMDs[#CMDs + 1] = {NAME = 'keysystem / key', DESC = 'Runs a key system verification'}
 CMDs[#CMDs + 1] = {NAME = 'kick', DESC = 'Kicks yourself from the experience'}
 CMDs[#CMDs + 1] = {NAME = 'vynixu', DESC = "Runs Vynixu's script for MM2"}
