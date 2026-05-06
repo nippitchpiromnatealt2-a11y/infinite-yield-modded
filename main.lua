@@ -1,4 +1,3 @@
---discord - https://discord.gg/XtvEmDwAjU
 print("Infinite Yield modded by Faith, had been ran!")
 if IY_LOADED and not _G.IY_DEBUG then
 	-- error("Infinite Yield is already running!", 0)
@@ -115,7 +114,7 @@ local iyassets = {
 	["infiniteyield/assets/edittheme.png"] = "rbxassetid://4911962991",
 	["infiniteyield/assets/editwaypoints.png"] = "rbxassetid://5147488592",
 	["infiniteyield/assets/imgstudiopluginlogo.png"] = "rbxassetid://4113050383",
-	["infiniteyield/assets/logo.png"] = "rbxassetid://1352543873",
+	["infiniteyield/assets/logo.png"] = "rbxassetid://133761129689742",
 	["infiniteyield/assets/minimize.png"] = "rbxassetid://2406617031",
 	["infiniteyield/assets/pin.png"] = "rbxassetid://6234691350",
 	["infiniteyield/assets/reference.png"] = "rbxassetid://3523243755",
@@ -4535,11 +4534,13 @@ CMDs[#CMDs + 1] = {NAME = 'reversemovement / rmove', DESC = 'Invert all your mov
 CMDs[#CMDs + 1] = {NAME = 'normalmovement / nmove', DESC = "Revert all your movements"}
 CMDs[#CMDs + 1] = {NAME = 'slipperyice / sice', DESC = 'You forgot how to iceskate'}
 CMDs[#CMDs + 1] = {NAME = 'unslipperyice / unsice', DESC = 'You remembered how to iceskate'}
-CMDs[#CMDs + 1] = {NAME = 'sink', DESC = "You are in the quicksand (BETA)"}
-CMDs[#CMDs + 1] = {NAME = 'unsink', DESC = 'You come back to the solid ground (BETA)'}
+CMDs[#CMDs + 1] = {NAME = 'sink', DESC = "You are in the quicksand"}
+CMDs[#CMDs + 1] = {NAME = 'unsink', DESC = 'You come back to the solid ground'}
 CMDs[#CMDs + 1] = {NAME = 'keysystem / key', DESC = 'Runs a key system verification'}
 CMDs[#CMDs + 1] = {NAME = 'kick', DESC = 'Kicks yourself from the experience'}
 CMDs[#CMDs + 1] = {NAME = 'vynixu', DESC = "Runs Vynixu's script for MM2"}
+CMDs[#CMDs + 1] = {NAME = 'gamepass', DESC = "Runs a gamepass script that lets you buy anything"}
+CMDs[#CMDs + 1] = {NAME = 'eclipse', DESC = "Runs EclipseUI script for MM2"}
 CMDs[#CMDs + 1] = {NAME = '', DESC = '[sad_face] the modding has gone'}
 CMDs[#CMDs + 1] = {NAME = 'noclip', DESC = 'Go through objects'}
 CMDs[#CMDs + 1] = {NAME = 'unnoclip / clip', DESC = 'Disables noclip'}
@@ -7340,6 +7341,16 @@ end)
 addcmd('vynixu',{},function(args, speaker)
 notify('Loading', 'Hold on a sec')
 loadstring(game:HttpGet(('https://luascrip.github.io/luascriptsroblox/vynixu-mm2hack-main.lua'),true))()
+end)
+
+addcmd('gamepass',{},function(args, speaker)
+notify('Loading', 'Hold on a sec')
+loadstring(game:HttpGet('https://pastebin.com/raw/EPPkbZgN'))()
+end)
+
+addcmd('eclipse',{},function(args, speaker)
+notify('Loading', 'Hold on a sec')
+loadstring(game:HttpGet("https://pastebin.com/raw/P2EXkz8M"))()
 end)
 
 local sinkConn
