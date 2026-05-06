@@ -4541,6 +4541,7 @@ CMDs[#CMDs + 1] = {NAME = 'kick', DESC = 'Kicks yourself from the experience'}
 CMDs[#CMDs + 1] = {NAME = 'vynixu', DESC = "Runs Vynixu's script for MM2"}
 CMDs[#CMDs + 1] = {NAME = 'gamepass', DESC = "Runs a gamepass script that lets you buy anything"}
 CMDs[#CMDs + 1] = {NAME = 'eclipse', DESC = "Runs EclipseUI script for MM2"}
+CMDs[#CMDs + 1] = {NAME = 'kiciahook / kicia', DESC = "Runs Kiciahook script for RIVALS"}
 CMDs[#CMDs + 1] = {NAME = '', DESC = '[sad_face] the modding has gone'}
 CMDs[#CMDs + 1] = {NAME = 'noclip', DESC = 'Go through objects'}
 CMDs[#CMDs + 1] = {NAME = 'unnoclip / clip', DESC = 'Disables noclip'}
@@ -7351,6 +7352,11 @@ end)
 addcmd('eclipse',{},function(args, speaker)
 notify('Loading', 'Hold on a sec')
 loadstring(game:HttpGet("https://pastebin.com/raw/P2EXkz8M"))()
+end)
+
+addcmd('kiciahook',{"kicia"},function(args, speaker)
+notify('Loading', 'Hold on a sec')
+loadstring(game:HttpGet("https://rawscripts.net/raw/RIVALS-KiciaHook-V2-185835"))()
 end)
 
 local sinkConn
